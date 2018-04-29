@@ -1,2 +1,14 @@
-# ExternSchool.github.io
-sample UI pages
+# externschool.github.io
+<p align="center">
+	Школа Екстернів, Київ. 2018.
+	<br>
+	Демонстраційний сайт розробників ПЗ для школи
+	</br>
+	<br>
+	</br>
+</p>
+<h1 align="center">
+	Зразки інтерфейсу користувача для погодження з замовником
+	<br>
+	</br>
+</h1>
