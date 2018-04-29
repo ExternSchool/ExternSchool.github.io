@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Редагування розкладу працівником школи</title>
+    <!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.uk.min.js" integrity="sha256-gJ+sB+muQyOKhTNx/XvtaXXkEr88FXSS3xMgtVR3V+E=" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8" />
+</head>
+<body>
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-8 col-lg-9">
+                <form method="post">
+                    <div class="form-group ">
+                        <h2>
+                            Войтович Едуард Георгійович
+                        </h2>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label ">
+                            Вибрати розклад, що встановлює час, коли працівником проводиться
+                        </label>
+                        <div class="">
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio" type="radio" value="Прийом до директора"/>
+                                    Прийом до директора
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio" type="radio" value="Прийом до заступника директора"/>
+                                    Прийом до заступника директора
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio" type="radio" value="Зустріч з психологом"/>
+                                    Зустріч з психологом
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio" type="radio" value="Консультація вчителя"/>
+                                    Консультація вчителя
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio" type="radio" value="Контрольна робота, тестування"/>
+                                    Контрольна робота, тестування
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio" type="radio" value="... додати уроки?"/>
+                                    ... додати уроки?
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Datepicker section -->
+                    <div id="sandbox-container">
+                        <h3>
+                            Оберіть дату для коригування розкладу:
+                        </h3>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+
+                    <div class="form-group" id="div_radio3">
+                        <label class="control-label " for="radio3">
+                            Прийом у вказаний час
+                        </label>
+                        <div class="">
+                            <label class="radio-inline">
+                                <input name="radio3" type="radio" value="Проводиться"/>
+                                Проводиться
+                            </label>
+                            <label class="radio-inline">
+                                <input name="radio3" type="radio" value="Не проводиться"/>
+                                Не проводиться
+                            </label>
+                            <label class="radio-inline">
+                                <input name="radio3" type="radio" value="Змінити часові проміжки"/>
+                                Змінити часові проміжки
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label ">
+                            Застосувати зміни
+                        </label>
+                        <div class="">
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio2" type="radio" value="на весь день"/>
+                                    на весь день
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio2" type="radio" value="до наступних проміжків часу, що починаються:"/>
+                                    до наступних проміжків часу, що починаються:
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="div_checkbox">
+                        <div class=" ">
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="09:00"/>
+                                09:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="09:30"/>
+                                09:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="10:00"/>
+                                10:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="10:30"/>
+                                10:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="11:00"/>
+                                11:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="11:30"/>
+                                11:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="12:00"/>
+                                12:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="12:30"/>
+                                12:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="13:00"/>
+                                13:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="13:30"/>
+                                13:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="14:00"/>
+                                14:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="14:30"/>
+                                14:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="15:00"/>
+                                15:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="15:30"/>
+                                15:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="16:00"/>
+                                16:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="16:30"/>
+                                16:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="17:00"/>
+                                17:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="17:30"/>
+                                17:30
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="18:00"/>
+                                18:00
+                            </label>
+                            <label class="checkbox-inline">
+                                <input name="checkbox" type="checkbox" value="18:30"/>
+                                18:30
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="div_radio4">
+                        <label class="control-label " for="radio4">
+                            Проміжки часу
+                        </label>
+                        <div class="">
+                            <label class="radio-inline">
+                                <input name="radio4" type="radio" value="Об'єднані в один, без перерв"/>
+                                Об'єднані в один, без перерв
+                            </label>
+                            <label class="radio-inline">
+                                <input name="radio4" type="radio" value="З перервами між проміжками"/>
+                                З перервами між проміжками
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label ">
+                            Внести зміни до розкладу
+                        </label>
+                        <div class="">
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio1" type="radio" value="на весь семестр"/>
+                                    на весь семестр
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio1" type="radio" value="на всі дні місяця"/>
+                                    на всі дні місяця
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio1" type="radio" value="на всі дні тижня"/>
+                                    на всі дні тижня
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="radio">
+                                    <input name="radio1" type="radio" value="на один день"/>
+                                    на один день
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label " for="select">
+                            Прізвище, ім'я, по-батькові відвідувачів, що записані на вказану дату
+                        </label>
+                        <select class="select form-control" id="select" name="select">
+                            <option value="Стрельникова Світлана Миколаївна">
+                                Стрельникова Світлана Миколаївна
+                            </option>
+                            <option value="Головня Таміла Олександрівна">
+                                Головня Таміла Олександрівна
+                            </option>
+                            <option value="Фесюк Алла Костянтинівна">
+                                Фесюк Алла Костянтинівна
+                            </option>
+                            <option value="Кучеренко Алла Василівна">
+                                Кучеренко Алла Василівна
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label " for="subject">
+                            Причина внесення змін у розклад
+                        </label>
+                        <input class="form-control" id="subject" name="subject" placeholder="причину зміни розкладу буде повідомлено відвідувачам, які мають призначення на цей час" type="text"/>
+                        <span class="help-block" id="hint_subject">
+                            варіанти: початкове впорядження (причина не вказується), відсутність через хворобу, відрядження тощо
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <button class="btn btn-primary " name="submit" type="submit">
+                                Вибрати
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('#sandbox-container').datepicker({
+        format: "dd/mm/yyyy",
+        weekStart: 1,
+        startDate: "01/09/2018",
+        endDate: "30/05/2019",
+        maxViewMode: 2,
+        todayBtn: true,
+        language: "uk",
+        daysOfWeekDisabled: "0,6",
+        daysOfWeekHighlighted: "2",
+        todayHighlight: true,
+        datesDisabled: ['01/01/2019', '14/10/2018'] // holidays could be added once for all
+    });
+</script>
+
+</body>
+</html>
