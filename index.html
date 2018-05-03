@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bootstrap Simple</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style>
-		/* Remove the navbar's default margin-bottom and rounded borders */
-		.navbar {
-			margin-bottom: 0;
-			border-radius: 0;
-		}
+    <title>Extern School, Kyiv UA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
 
-		/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-		.row.content {height: 450px}
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 450px}
 
-		/* Set gray background color and 100% height */
-		.sidenav {
-			padding-top: 20px;
-			background-color: #f1f1f1;
-			height: 100%;
-		}
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
 
-		/* Set black background color, white text and some padding */
-		footer {
-			background-color: #555;
-			color: white;
-			padding: 15px;
-		}
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
 
-		/* On small screens, set height to 'auto' for sidenav and grid */
-		@media screen and (max-width: 767px) {
-			.sidenav {
-				height: auto;
-				padding: 15px;
-			}
-			.row.content {height:auto;}
-		}
-	</style>
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height:auto;}
+        }
+    </style>
 </head>
 <body>
 
 <nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Logo</a>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="https://github.com/ExternSchool">GitHub</a></li>
-				<li><a href="add_appointment.html">Форма №1</a></li>
-				<li><a href="edit_timeslots.html">Форма №2</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			</ul>
-		</div>
-	</div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://extern.kiev.ua">Школа Екстернів</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="https://github.com/ExternSchool">GitHub Source Code</a></li>
+                <li><a href="https://github.com/ExternSchool/planner/tree/develop">Visit Planner PRD</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="mailto:mailto.benkoff@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Почта</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <div class="container-fluid text-center">
-	<div class="row content">
-		<div class="col-sm-2 sidenav">
-			<a href="https://user-images.githubusercontent.com/10642971/39540437-54043ba2-4e4b-11e8-8ad4-f86d6297e15a.jpg">Схема процесса MVP</a><br><br>
-            <a href="https://github.com/ExternSchool/planner/tree/develop">Техническое задание по MVP (англ.)</a><br><br>
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <h5>Черновики и образцы для ознакомления:</h5>
+            <a href="https://user-images.githubusercontent.com/10642971/39540437-54043ba2-4e4b-11e8-8ad4-f86d6297e15a.jpg" target="_blank">Схема процесса MVP</a><br><br>
             <a href="add_appointment.html">Форма попереднього запису для відвідувачів</a><br><br>
             <a href="edit_timeslots.html">Редагування розкладу працівником школи</a><br><br>
         </div>
         <div class="col-sm-8 text-left">
             <p align="center">
                 <br>
-            <h2> Документы для согласований с Заказчиком</h2>
+            <h1>School Visit Planner <br> Планирование посещений школы</h1>
+            <h2>документы для согласования с Заказчиком</h2>
             </p>
             <p align="justufy">
-                Первым этапом - минимально жизнеспособный продукт (MVP)
-            <h3>Планировщик посещений.</h3>
-            <br>
+            <h3>Предварительная оценка сроков</h3>
+            <ul>
+                <li>
+                    прототип, сбор требований для MVP - 15 июня 2018 года;
+                </li>
+                <li>
+                    минимально жизнеспособный продукт (MVP), пилотное пользование - сентябрь 2018 года;
+                </li>
+                <li>
+                    доработка MVP, добавление функционала - октябрь 2018 года - апрель 2019 года;
+                </li>
+            </ul>
+
             <h3>Цели и задачи</h3>
             <ul>
                 <li>
@@ -99,8 +109,8 @@
                     дополнительного согласования назначить визит на удобное время;
                 </li>
                 <li>
-                    дать учителям средство автоматизации рутьинных процессов (печать контрольных, составление учебных планов,
-                    назначение учителей и т.п.) - очень желательно МАКСИМАЛЬНО ПОДРОБНО ОПИСАТЬ подобные действия;
+                    создать средство для последующей автоматизации рутинных процессов (печать контрольных, составление учебных планов,
+                    назначение учителей и т.п.) - желательно МАКСИМАЛЬНО ПОДРОБНО ОПИСАТЬ такие действия;
                 </li>
                 <li>
                     позволить студентам и их родителям оптимизировать учебный процесс, существенно расширяя горизонт планирования и
@@ -111,28 +121,28 @@
                     консультациях и по результатам написания письменных работ;
                 </li>
                 <li>
-                    на основе централизованной и легко доступной для сотрудников школы базы данных учеников, организовать
-                    оперативное взаимодействие с родителями и уведомления о собраниях, мероприятиях, взносах в школьный фонд и пр.,
-                    т.е. автоматизировать те операции, организация которых традиционно вызывает сложности в результате вовлечения
-                    родителей (родительский комитет).
+                    на основе централизованной и легко доступной для сотрудников школы и родительского комитета базы данных учеников
+                    организовать оперативное взаимодействие с родителями: отправлять уведомления о собраниях, мероприятиях,
+                    сроках и порядке взносов в школьный фонд и т.д., т.е. автоматизировать те операции, организация которых традиционно
+                    вызывает сложности из-за необходимости ручной координации множества людей.
                 </li>
             </ul>
             </p>
 
             <p>
-                <h3>Стороны (роли)</h3>
+            <h3>Стороны (роли)</h3>
             <ul>
                 <h4>Принимающая сторона (персонал школы)</h4>
-                Школьная администрация и вспомогательный персонал (термин ОК?):
+                Школьная администрация и другой персонал:
                 <li>
                     директор;
                 </li>
                 <li>
-                    заместители директора - вручную составляют индивидуальные планы, принимкают документы (справки и пр.),
-                    выдают зачетные книжки, планы;
+                    заместители директора - составляют индивидуальные планы, принимают документы (справки и пр.),
+                    выдают на руки зачетные книжки, учебные планы, пр.;
                 </li>
                 <li>
-                    психолог;
+                    психолог - в основном взаимодействие на этапе зачисления детей  в школу;
                 </li>
                 <li>
                     администраторы - готовят и распечатьывают материалы для проведения тестов, контрольных работ в
@@ -152,7 +162,7 @@
                     по результатам собеседований во время консультаций дают допуск на сдачу тестов, написание контрольных работ;
                 </li>
                 <li>
-                    прверяют и оценивают письменные работы, устные ответы на вопросы во время консультаций, выставляют итоговые оценки;
+                    проверяют и оценивают письменные работы, устные ответы на вопросы во время консультаций, выставляют итоговые оценки;
                 </li>
             </ul>
             Любой из сотрудников школы может иметь педагооическую нагрузку и выступать в роли учителя.
@@ -166,7 +176,7 @@
                     родители;
                 </li>
                 <li>
-                    другие посетители (в основном на этапе подачи документов);
+                    другие посетители (в основном на этапе зачисления детей и ежегодной подачи документов);
                 </li>
             </ul>
             <ul>
@@ -194,10 +204,12 @@
                     на прием посетители должны получать уведомления и возможность переназначить время;
                 </li>
                 <li>
-                    запись на контрольные работы - время устанавливается администратором (роль);
+                    запись на контрольные работы - время устанавливается дежурным администратором (учитель) или администратором
+                    системы? (роль);
                 </li>
                 <li>
-                    запись закрывается (становится невозможной) когда? за какое время до какого события?
+                    запись закрывается (становится невозможной) когда? за какое время до какого события? (например, за 12 часов до начала
+                    контрольной работы или, скажем, в 22-00 дня, предшествующего консультации).
                 </li>
                 <li>
                     персонал должен иметь возможность просматривать списки посетителей (уточнить, насколько подробной должна быть
@@ -206,13 +218,15 @@
                 </li>
                 <li>
                     что должны видеть другие зарегистрнированные пользователи (дети) - просто свободное время каждого сотрудника
-                    или только тех, у кого они учатся?
+                    или только тех, у кого они учатся? устраивает ли вариант выдачи регистрационного кода вместе с зачеткой в начале года?
+                    (требуется предварительное составление списков);
                 </li>
                 <li>
-                    что должны видеть незарегистрнированные пользователи? что доступно таким посетителям?
+                    что должны видеть незарегистрнированные пользователи? что вообще доступно таким посетителям? (как вариант, только
+                    запись к директору, заму и психологу);
                 </li>
                 <li>
-                    посетители должны иметь возможность выбрать из предложенных вариантов;
+                    посетители должны иметь возможность выбрать из предложенных вариантов доступного времени, выбор по имени? по предмету?;
                 </li>
                 <li>
                     если все время занято, должна ли создаваться очередь ожидания? если да, что она должна обеспечивать
@@ -225,20 +239,16 @@
                     ... что еще?
                 </li>
                 <li>
-                    геймификация - поощрение пунктуальности.
-                    optionally some sort of gamification could be used to motivate students and their parents to follow an established schedule,
-                    make and cancel their appointments beforehand; for example, they could receive some points every time when they come to school
-                    exactly when it was appointed; those score points could affect time slot availability notification queue,
-                    informing first the students who have most score points; or some reservation quotas could be established for the most
-                    punctual students, competitions could be organized and so on;
+                    геймификация - поощрение пунктуальности, отмены бронирования и т.д. например, начисление каких то баллов, распределение мест,
+                    почетные звания, награды, грамоты, соревнования, первоочередная запись в очереди и т.п. плюшки.
                 </li>
             </ul>
 
             </p>
 
             <p>
-                <h3>Базы данных</h3>
-                На первом этапе формируются следующие базы данных (ПРОСЬБА УТОЧНИТЬ):
+            <h3>Базы данных</h3>
+            На первом этапе формируются следующие базы данных (ПРОСЬБА УТОЧНИТЬ):
             <ul>
                 <li>
                     сотрудники школы, осуществляющие прием и взаимодействие с детьми и их родителями: имя, фамилия, должность,
@@ -253,25 +263,24 @@
                     расписание принимающих сотрудников школы с возможностью выбора даты и времени посещений
                 </li>
             </ul>
-            На следующих этапах добавить (ПРОСЬБА УТОЧНИТЬ, в процессе работы):
+            На следующих этапах (при расширении первоначальных базовых возможностей) желательно добавить (примерный список):
             <ul>
                 <li>
-                    базу с результатами оценивания на консультациях по учебным дисциплинам
+                    базу с результатами оценивания на консультациях по учебным дисциплинам;
                 </li>
                 <li>
-                    базу с результатами контрольных работ
+                    базу с результатами контрольных работ;
                 </li>
                 <li>
                     ...
                 </li>
             </ul>
             <h3>Дальнейшее развитие проекта</h3>
-            На основе MVP и сформированных баз предлагается реализовать (не спеша, в процессе работы над первой частью
-            максимально подробно, с желаемой очередностью добавления новых возможностей):
+            На основе MVP и сформированных баз, как вариант, можно подумать о добавления таких новых возможностей:
             <ol type="1">
-                <li>Печать необходимых материалов для контрольных по спискам записавшихся.</li>
-                <li>Журнал успеваемости по проверенным контрольным.</li>
-                <li>Онлайн-версия зачетки для контроля за сдачей предметов.</li>
+                <li>Формирование по списку зарегистрировавшихся на контрольную работу и вывод на печать всех необходимых бланков.</li>
+                <li>Ведение журнала успеваемости по проверенным контрольным.</li>
+                <li>Онлайн-версия зачетки для контроля за ходом сдачи предметов и планирования со стороны детей и их родителей.</li>
                 <li>...что еще хотелось бы видеть?...</li>
             </ol>
             .
@@ -279,18 +288,18 @@
             <br><br>
         </div>
         <div class="col-sm-2 sidenav">
-			<div class="well">
-				<p>Пока пусто</p>
-			</div>
-			<div class="well">
-				<p>Еще пусто</p>
-			</div>
-		</div>
+            <div class="well">
+                <p><a href="https://github.com/ExternSchool">Project Source Code GitHub Repositories</a></p>
+            </div>
+            <div class="well">
+                <p><a href="https://github.com/ExternSchool/planner/tree/develop">Visit Planner Product Requirements Document</a></p>
+            </div>
+        </div>
     </div>
 </div>
 
 <footer class="container-fluid text-center">
-	<p>Школа Екстернів, Київ (с)2018</p>
+    <p>Школа Екстернів, Київ (с)2018</p>
 </footer>
 
 </body>
