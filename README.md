@@ -8,7 +8,9 @@
 	</br>
 </p>
 <h1 align="center">
+    <a href="https://externschool.github.io">
 	Зразки інтерфейсу користувача для погодження з замовником
+	</a>
 	<br>
 	</br>
 </h1>
