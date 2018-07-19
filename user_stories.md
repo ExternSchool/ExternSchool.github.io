@@ -64,7 +64,7 @@
 <br><br>
 
 **Схема отношений между объектами**
-<img src="https://user-images.githubusercontent.com/10642971/42900956-f0fafaea-8ad2-11e8-9f32-d86a51eeb6ae.png" 
+<img src="https://user-images.githubusercontent.com/10642971/42974950-35b42dd8-8bc2-11e8-8acf-78f3a0b0c898.png" 
 alt="Схема отношений объектов MVP">
 
 ## Пользовательские истории
