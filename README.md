@@ -1,6 +1,6 @@
 # externschool.github.io
 <p align="center">
-	Школа Екстернів, Київ. 2018.
+	https://github.com/ExternSchool. 2018.
 	<br>
 	Демонстрационный сайт разработчиков ПО
 	</br>
